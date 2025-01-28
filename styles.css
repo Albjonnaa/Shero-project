@@ -1,0 +1,566 @@
+.hero {
+    background-image: url('images/imagem.jpg'); /* Update the file path if needed */
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: center; /* Centers the image */
+    height: 10px; /* Set height of the hero section */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; /* Text color */
+    text-align: center;
+}
+
+.hero-text {
+    z-index: 1; /* Ensures the text is on top of the image */
+}
+
+.hero h1 {
+    font-size: 3rem; /* Adjust as needed */
+    margin-bottom: 20px;
+}
+
+.hero button {
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.hero button:hover {
+    background-color: #e65c00; /* Hover effect */
+}
+
+.hero {
+    height: 400px; /* Set height of the hero section */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; /* Text color */
+    text-align: center;
+    position: relative;
+}
+
+.hero-text img {
+    width: 100%; /* Make image take up full width */
+    height: auto; /* Adjust height based on aspect ratio */
+    position: absolute; /* Position the image behind the text */
+    top: 0;
+    left: 0;
+    z-index: -1; /* Ensure text is above the image */
+}
+
+.hero h1 {
+    font-size: 3rem; /* Adjust as needed */
+    margin-bottom: 20px;
+}
+
+.hero button {
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.hero button:hover {
+    background-color: #e65c00; /* Hover effect */
+}
+/* Hero section styling */
+.hero {
+    height: 400px; /* Set height for the hero section */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; /* Text color */
+    text-align: center;
+    position: relative;
+}
+
+.hero-text {
+    z-index: 1; /* Ensure text stays on top of the image */
+}
+/* General Reset (optional but helpful) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background-color: #222;
+    color: white;
+    padding: 10px 20px;
+}
+
+header .banner {
+    text-align: center;
+    font-size: 14px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+header nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header nav .menu {
+    list-style: none;
+    display: flex;
+}
+
+header nav .menu li {
+    margin-right: 20px;
+}
+
+header nav .menu li a {
+    text-decoration: none;
+    color: white;
+}
+
+header nav .cart-options {
+    font-size: 14px;
+}
+
+/* Main Content Area */
+main {
+    padding: 20px;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #1a1818;
+    color: white;
+    padding: 50px;
+    text-align: center;
+    background-image: url('images/imagem.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;  /* Ensure the image covers the hero section without overflowing */
+    height: 400px;  /* Default height, can be adjusted */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;  /* Prevent image overflow */
+}
+
+.hero-text {
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero button {
+    padding: 10px 20px;
+    background-color: #f77f00;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.hero button:hover {
+    background-color: #d66b00;
+}
+
+/* Products Section (Flexbox for product grid) */
+.products .product-grid {
+    display: flex;              /* Enables Flexbox */
+    justify-content: space-between;  /* Distributes items evenly with space between */
+    gap: 20px;                  /* Adds space between the items */
+    flex-wrap: wrap;            /* Allows items to wrap if necessary */
+    margin-top: 20px;
+}
+
+.products .product {
+    text-align: center;         /* Centers the text under the image */
+    width: 30%;                 /* Width of each product item */
+    box-sizing: border-box;     /* Includes padding/border in the element's total width/height */
+    overflow: hidden;           /* Ensure the image stays inside its container */
+}
+
+.products img {
+    width: 100%;                /* Make the images responsive */
+    height: auto;               /* Maintain aspect ratio */
+    object-fit: cover;          /* Ensures the image is properly contained */
+    display: block;             /* Ensures no extra spacing below the image */
+}
+
+.products p {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Featured Products Section */
+.featured-products {
+    padding: 40px;
+    background-color: #f4f4f4;
+}
+
+.featured-products h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.featured-products .product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.featured-products .product {
+    flex: 1 1 calc(25% - 20px); /* 4 items per row */
+    text-align: center;
+    margin: 10px;
+    overflow: hidden;           /* Ensure image stays within container */
+}
+
+.featured-products img {
+    width: 100%; /* Make images responsive */
+    height: auto;
+    object-fit: cover;  /* Ensures the images fit without distortion */
+}
+
+/* Featured Products Carousel */
+.featured-products .carousel {
+    position: relative;
+    overflow: hidden;
+    max-width: 100%;
+    margin-top: 30px;
+}
+
+.featured-products .carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.featured-products .carousel-item {
+    flex: 0 0 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.featured-products .carousel-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.featured-products button {
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.featured-products .prev {
+    left: 10px;
+    transform: translateY(-50%);
+}
+
+.featured-products .next {
+    right: 10px;
+    transform: translateY(-50%);
+}
+
+/* Testimonials Section */
+.testimonials {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.testimonials blockquote {
+    font-size: 18px;
+    font-style: italic;
+    margin: 20px 0;
+}
+
+.testimonials cite {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #222;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Media Query for Small Screens */
+@media (max-width: 768px) {
+    /* Adjust product grid for smaller screens */
+    .products .product-grid {
+        flex-direction: column; /* Stacks the products vertically */
+        align-items: center;    /* Centers the products */
+    }
+
+    .products .product {
+        width: 80%;             /* Makes products wider on smaller screens */
+        margin-bottom: 20px;    /* Adds space between each product */
+    }
+
+    /* Adjust featured product carousel for small screens */
+    .featured-products .carousel-item {
+        flex: 0 0 100%;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero button {
+        font-size: 14px;
+    }
+
+    .store-locator h2 {
+        font-size: 1.5rem;
+    }
+
+    .store-locator button {
+        font-size: 0.9rem;
+    }
+
+    .featured-products h2 {
+        font-size: 1.5rem;
+    }
+
+    .featured-products .product {
+        flex: 1 1 100%; /* Stack featured products vertically on mobile */
+    }
+
+    .carousel-images {
+        flex-direction: column;
+    }
+}
+
+/* For Mobile Devices */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .product-grid {
+        flex-direction: column; /* Stack the products vertically */
+        align-items: center;
+    }
+
+    .product {
+        flex: 1 1 80%; /* Each product takes up more space */
+        margin: 10px 0;
+    }
+
+    .hero button {
+        font-size: 1rem;
+    }
+
+    .hero {
+        height: 300px; /* Smaller hero section on mobile */
+    }
+
+    .store-locator h2 {
+        font-size: 1.5rem;
+    }
+
+    .store-locator button {
+        font-size: 0.9rem;
+    }
+
+    .featured-products h2 {
+        font-size: 1.5rem;
+    }
+
+    .featured-products .product {
+        flex: 1 1 100%; /* Stack featured products vertically on mobile */
+    }
+
+    .carousel-images {
+        flex-direction: column;
+    }
+}
+
+/* For Tablet Devices */
+@media (max-width: 1024px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .product-grid {
+        flex-direction: row;
+    }
+
+    .product {
+        flex: 1 1 45%; /* Products take up 45% of the row */
+    }
+
+    .hero button {
+        font-size: 1.1rem;
+    }
+
+    .store-locator h2 {
+        font-size: 1.75rem;
+    }
+
+    .store-locator button {
+        font-size: 1rem;
+    }
+
+    .featured-products .product {
+        flex: 1 1 45%; /* Featured products take up 45% of the row */
+    }
+}
+
+/* For Desktops */
+@media (min-width: 1025px) {
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .product-grid {
+        flex-direction: row;
+        justify-content: space-between; /* Spread out the products */
+    }
+
+    .product {
+        flex: 1 1 calc(33.33% - 20px); /* 3 items per row */
+    }
+
+    .hero button {
+        font-size: 1.2rem;
+    }
+
+    .store-locator h2 {
+        font-size: 2rem;
+    }
+
+    .store-locator button {
+        font-size: 1.1rem;
+    }
+
+    .featured-products h2 {
+        font-size: 2rem;
+    }
+
+    .featured-products .product {
+        flex: 1 1 calc(25% - 20px); /* 4 items per row */
+    }
+
+    .carousel-images {
+        flex-direction: row; /* Keep images in a row on larger screens */
+    }
+}
+/* Carousel Container */
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Hide images by default and show one at a time */
+.carousel-container {
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Carousel images */
+.carousel-images img {
+    width: 100%;
+    height: auto;
+    display: none;
+}
+
+/* Make the first image visible */
+.carousel-images img.active {
+    display: block;
+}
+
+/* Position previous and next buttons */
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(228, 83, 26, 0.5);
+    color: white;
+    border: none;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+.shop-now-btn.animate {
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+}
+/* Hide all images by default */
+.carousel-images img {
+    display: none;
+}
+
+/* Make the first image visible */
+.carousel-images img.active {
+    display: block;
+}
+
+/* Position previous and next buttons */
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(228, 83, 26, 0.5);
+    color: white;
+    border: none;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+.shop-now-btn.animate {
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+}

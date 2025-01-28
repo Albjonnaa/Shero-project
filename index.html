@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hab+Dash</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="banner">STITCH REWARDS | QUICK ORDER | STORE LOCATOR</div>
+        <nav>
+            <div class="logo">hab+dash</div>
+            <ul class="menu">
+                <li><a href="#">Top Thread</a></li>
+                <li><a href="#">Bobbins</a></li>
+                <li><a href="#">Stabilizer</a></li>
+                <li><a href="#">Display</a></li>
+                <li><a href="#">Notions</a></li>
+            </ul>
+            <div class="cart-options">CART | SIGN UP | LOG IN</div>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Add color to your masterpiece</h1>
+                <!-- Hero image added -->
+                <img src="images/imagem.jpg" alt="Colorful Threads">
+                <button>Shop Now</button>
+            </div>
+        </section>
+
+        <section class="products">
+            <div class="product-grid">
+                <!-- Product Images -->
+                <div class="product">
+                    <img src="images/imagea.jpg" alt="Glide">
+                    <p>GLIDE</p>
+                </div>
+                <div class="product">
+                    <img src="images/imageb.jpg" alt="Magnetic Core Bobbin">
+                    <p>MAGNETIC CORE BOBBIN</p>
+                </div>
+                <div class="product">
+                    <img src="images/imagec.jpg" alt="Premium Stabilizer">
+                    <p>PREMIUM STABILIZER</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="store-locator">
+            <h2>Retail Store Locator</h2>
+            <p>Buy our products in more than 600 retail stores worldwide</p>
+            <button>Search Retail Store</button>
+        </section>
+
+        <section class="featured-products">
+            <h2>Featured Products</h2>
+            <div class="product-grid">
+                <!-- Featured Products Images -->
+                <div class="product">
+                    <img src="images/image1.png" alt="Embroidery Stabilizer">
+                    <p>EMBROIDERY STABILIZER</p>
+                </div>
+                <div class="product">
+                    <img src="images/image2.jpg" alt="Cubbie Grey Elephant">
+                    <p>CUBBIE GREY ELEPHANT</p>
+                </div>
+                <div class="product">
+                    <img src="images/image3.jpg" alt="Kimberbell Cup of Cheer">
+                    <p>KIMBERBELL CUP OF CHEER</p>
+                </div>
+                <div class="product">
+                    <img src="images/image4.jpg" alt="Kimberbell Two Scoops">
+                    <p>KIMBERBELL TWO SCOOPS</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Carousel Section -->
+        <section class="carousel">
+            <h2>Featured Products Carousel</h2>
+            <div class="carousel-container">
+                <div class="carousel-images">
+                    <img src="images/image1.png" alt="Product 1">
+                    <img src="images/image2.jpg" alt="Product 2">
+                    <img src="images/image3.jpg" alt="Product 3">
+                    <img src="images/image4.jpg" alt="Product 4">
+                </div>
+                <button class="prev">&#10094;</button>
+                <button class="next">&#10095;</button>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <h2>TESTIMONIALS</h2>
+            <blockquote>
+                "As a machine quilter, I love the sheen of Glide and how it adds an extra special touch to my quilts..."
+                <cite>- Angela Walters</cite>
+            </blockquote>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Hab+Dash. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript for Carousel Functionality -->
+    <script>
+        let index = 0;
+        const images = document.querySelectorAll('.carousel-images img');
+        const totalImages = images.length;
+
+        // Initially show the first image
+        images[index].classList.add('active');
+
+        // Next button functionality
+        document.querySelector('.next').addEventListener('click', () => {
+            images[index].classList.remove('active');
+            index = (index + 1) % totalImages; // Cycle to next image
+            images[index].classList.add('active');
+        });
+
+        // Previous button functionality
+        document.querySelector('.prev').addEventListener('click', () => {
+            images[index].classList.remove('active');
+            index = (index - 1 + totalImages) % totalImages; // Cycle backward
+            images[index].classList.add('active');
+        });
+    </script>
+</body>
+</html>
+
